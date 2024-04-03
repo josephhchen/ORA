@@ -5,3 +5,8 @@ ORA is a voice-activated assistant powered by machine learning, designed specifi
 
 ORA will understand natural language to accurately process and execute your commands.
 
+
+## Created by
+
+ - Joseph Chen
+ - Jonathan Guzman
