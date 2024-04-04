@@ -2,3 +2,5 @@
 google_cloud_creds.json
 
 
+# Ignore csv file
+voice_to_do_list.csv
