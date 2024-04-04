@@ -1,0 +1,4 @@
+# Ignore Google Cloud credentials file
+google_cloud_creds.json
+
+
