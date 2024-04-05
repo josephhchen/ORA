@@ -35,10 +35,7 @@ def cost(T,Y):
 def error_rate(targets,predictions):
     return np.mean(targets != predictions)
 
-'''
-this function is for...
-'''
-def getBinaryfer13data(filename):
+def getBinaryfer13Data(filename):
     Y = []
     X = []
     first = True

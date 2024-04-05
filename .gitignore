@@ -3,4 +3,8 @@ google_cloud_creds.json
 
 
 # Ignore csv file
-voice_to_do_list.csv
+voice_to_do_list_train.csv
+voice_to_do_list_test.csv
+cleaned_data.csv
+data_set_to_do_1.csv
+data_set_to_do_2.csv
