@@ -5,7 +5,7 @@ def clean_csv(input_filename, output_filename):
     try:
         with open(input_filename, 'r', encoding='utf-8') as infile:
             reader = csv.reader(infile, delimiter=';')
-            headers = next(reader)  # This might raise StopIteration if the file is empty
+            headers = next(reader)  
             temp_filename = output_filename + '.tmp'
 
             with open(temp_filename, 'w', newline='', encoding='utf-8') as outfile:
@@ -18,7 +18,6 @@ def clean_csv(input_filename, output_filename):
                     row[command_index] = row[command_index].replace('olly', 'ora')
                     writer.writerow(row)
 
-        # Replace the original file with the modified one
         os.replace(temp_filename, output_filename)
         print('CSV file cleaned successfully.')
 
@@ -26,6 +25,6 @@ def clean_csv(input_filename, output_filename):
         print("The input file is empty or the header is missing.")
 
 if __name__ == '__main__':
-    input_filename = 'cleaned_data.csv'  # Ensure this is the correct path
-    output_filename = 'final_cleaned_data.csv'  # It's safer to output to a different file
+    input_filename = 'cleaned_data.csv' 
+    output_filename = 'final_cleaned_data.csv' 
     clean_csv(input_filename, output_filename)
